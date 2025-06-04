@@ -9,7 +9,7 @@ namespace MyBox.Internal
 		public static void InitializeInstance()
 		{
 			if (_instance != null) return;
-			_instance = FindAnyObjectByType<MyEditorEventsBehaviorHandler>();
+			_instance = FindObjectOfType<MyEditorEventsBehaviorHandler>();
 			if (_instance != null) return;
 			
 			var handlerGameObject = new GameObject("MyEditorEventsBehaviorHandler");
